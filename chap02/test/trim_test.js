@@ -7,5 +7,10 @@ testCase("String trim test", {
   "test trim should remove backward whitespace":
   function () {
     assert("should remove backward whitespace", "a string" === "a string   ".trim());
+  },
+
+  "test trim should remove around whitespace":
+  function () {
+    assert("should remove around whitespace", "a string" === "   a string   ".trim());
   }
 })
